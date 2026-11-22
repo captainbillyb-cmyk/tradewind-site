@@ -1,0 +1,10 @@
+{
+  "name": "tradewind-site",
+  "private": true,
+  "description": "Trade Wind Timepieces website",
+  "scripts": {
+    "build": "node build.js",
+    "preview": "node build.js --drafts"
+  },
+  "engines": { "node": ">=18" }
+}

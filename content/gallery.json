@@ -1,0 +1,21 @@
+{
+  "eyebrow": "Watch gallery",
+  "heading": "A closer look.",
+  "images": [
+    { "image": "/assets/gallery-01.webp", "alt": "Rolex GMT-Master II on a watch cushion", "fit": "contain", "watermark": "dark", "watermark_position": "standard" },
+    { "image": "/assets/gallery-02.webp", "alt": "Rolex GMT-Master II on an aviation book", "fit": "contain", "watermark": "light", "watermark_position": "standard" },
+    { "image": "/assets/gallery-03.webp", "alt": "Close-up of a Rolex GMT-Master II", "fit": "contain", "watermark": "light", "watermark_position": "standard" },
+    { "image": "/assets/gallery-04.webp", "alt": "Omega Seamaster with a blue dial and blue strap", "fit": "contain", "watermark": "dark", "watermark_position": "standard" },
+    { "image": "/assets/gallery-05.webp", "alt": "Two-tone Rolex with a black dial, worn on the wrist", "fit": "contain", "watermark": "light", "watermark_position": "inset" },
+    { "image": "/assets/gallery-06.webp", "alt": "Two-tone Rolex with a blue dial and blue bezel, worn on the wrist", "fit": "contain", "watermark": "light", "watermark_position": "inset" },
+    { "image": "/assets/gallery-07.webp", "alt": "Tudor with a black dial and black bezel, worn on the wrist", "fit": "contain", "watermark": "light", "watermark_position": "inset" },
+    { "image": "/assets/gallery-08.jpg", "alt": "IWC pilot chronograph with a black dial and fabric strap", "fit": "cover", "watermark": "dark", "watermark_position": "standard" },
+    { "image": "/assets/gallery-09.jpg", "alt": "Omega Seamaster with a blue dial and rubber strap, studio view", "fit": "cover", "watermark": "dark", "watermark_position": "standard" },
+    { "image": "/assets/gallery-10.jpg", "alt": "Close-up of the blue Omega Seamaster dial and bezel", "fit": "cover", "watermark": "dark", "watermark_position": "standard" },
+    { "image": "/assets/gallery-11.jpg", "alt": "Omega Seamaster with a blue dial, alternate studio view", "fit": "cover", "watermark": "dark", "watermark_position": "standard" },
+    { "image": "/assets/gallery-liv-chronograph.webp", "alt": "LIV chronograph with a blue dial and brown leather strap, displayed on driftwood", "fit": "contain", "watermark": "light", "watermark_position": "raised" },
+    { "image": "/assets/gallery-liv-driftwood-portrait.webp", "alt": "LIV blue-dial chronograph with a brown leather strap on upright driftwood", "fit": "contain", "watermark": "light", "watermark_position": "standard" },
+    { "image": "/assets/gallery-iwc-closeup.webp", "alt": "Close-up of an IWC pilot chronograph with a black dial and fabric strap", "fit": "contain", "watermark": "dark", "watermark_position": "standard" },
+    { "image": "/assets/gallery-iwc-coral.jpeg", "alt": "IWC pilot chronograph with a black dial and strap, displayed on turquoise coral", "fit": "contain", "watermark": "dark", "watermark_position": "raised" }
+  ]
+}

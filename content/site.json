@@ -1,0 +1,77 @@
+{
+  "seo": {
+    "title": "Trade Wind Timepieces | Independent Watch Sourcing",
+    "description": "Trade Wind Timepieces LLC — independent sourcing and sales of exceptional pre-owned watches."
+  },
+  "business": {
+    "name": "Trade Wind Timepieces LLC",
+    "location": "Las Vegas, Nevada",
+    "phone": "+17023501679",
+    "phone_display": "(702) 350-1679",
+    "email": "Bill@tradewindtimepieces.com",
+    "email_subject": "Watch inquiry"
+  },
+  "hero": {
+    "eyebrow": "Independent watch sourcing",
+    "headline": "Timepieces",
+    "headline_italic": "with a story.",
+    "intro": "Trade Wind Timepieces connects collectors with exceptional watches through a personal, considered approach."
+  },
+  "about": {
+    "eyebrow": "About us",
+    "heading": "A personal way to find your next watch.",
+    "body": "We are an independent watch business focused on individual transactions and lasting relationships. Whether you have a particular reference in mind or are exploring what comes next, the conversation starts with the watch and what matters to you.",
+    "brands": "We source exceptional timepieces: Rolex, Audemars Piguet, Patek Philippe, Omega, Breitling, Tudor, and other distinguished watchmakers."
+  },
+  "services": {
+    "eyebrow": "What we do",
+    "heading": "Buying, selling, consignment and sourcing.",
+    "items": [
+      {
+        "title": "Buying",
+        "text": "Thinking of parting with a watch? We purchase quality pre-owned timepieces with a straightforward offer and a clear, discreet process."
+      },
+      {
+        "title": "Selling",
+        "text": "Exceptional pre-owned watches, each presented with clear details on condition, provenance, and what is included."
+      },
+      {
+        "title": "Consignment",
+        "text": "Let us present your watch to collectors on your behalf, with terms agreed up front and updates along the way."
+      },
+      {
+        "title": "Personal sourcing",
+        "text": "Tell us the reference you are after. We draw on our network to find the right example for you."
+      }
+    ],
+    "values": "Integrity · Superior service · Accountability",
+    "values_note": "Confidentiality upon request"
+  },
+  "approach": {
+    "eyebrow": "Our approach",
+    "heading": "Clear details. Direct conversation.",
+    "steps": [
+      {
+        "title": "Tell us what you seek",
+        "text": "A particular model, a reference family, or a direction you want to explore."
+      },
+      {
+        "title": "Review the details",
+        "text": "Discuss condition, provenance, included accessories, and the terms of the individual watch."
+      },
+      {
+        "title": "Make a considered choice",
+        "text": "Take the time you need to decide whether it is the right piece for you."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Trade Wind Timepieces",
+    "heading": "YOUR NEXT WATCH BEGINS WITH A CONVERSATION",
+    "text": "Ask Bill about current availability or a watch you are looking for.",
+    "button": "Email Bill"
+  },
+  "footer": {
+    "disclaimer": "Independent dealer. Not affiliated with the watch brands referenced here."
+  }
+}

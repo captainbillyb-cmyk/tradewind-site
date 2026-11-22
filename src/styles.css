@@ -1,0 +1,99 @@
+/* =====================================================================
+   Trade Wind Timepieces — styles
+   Sections 1–4 are carried over from the original live site so the look
+   is unchanged. Section 5 adds the new sections (services, listings,
+   Instagram) in the same visual language.
+   ===================================================================== */
+
+/* 1. Base (original) */
+:root{color-scheme:dark;--navy:#081626;--ink:#edf0ef;--muted:#b2bdc7;--line:#405167;--gold:#cbb995}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--navy);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.55}a{color:inherit}a:focus-visible{outline:2px solid var(--gold);outline-offset:5px}
+.shell{width:min(1200px,calc(100% - 48px));margin:auto}.header{position:absolute;z-index:2;top:0;width:100%;border-bottom:1px solid rgba(255,255,255,.2)}.headrow{display:flex;align-items:center;justify-content:space-between;min-height:86px;gap:24px}.brand{font-family:Georgia,'Times New Roman',serif;font-size:1.35rem;letter-spacing:.13em;text-transform:uppercase;text-decoration:none;line-height:1.1}.brand span{display:block;margin-top:6px;font-family:Arial,Helvetica,sans-serif;letter-spacing:.3em;font-size:.58rem;color:var(--gold)}.nav{display:flex;gap:28px;font-size:.87rem;letter-spacing:.08em;text-transform:uppercase}.nav a{text-decoration:none}.nav a:hover{color:var(--gold)}
+.hero{min-height:720px;min-height: min(820px,95svh);display:flex;align-items:center;position:relative;background:#031724}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,16,29,.55),transparent 67%),linear-gradient(0deg,#081626 0%,transparent 25%);pointer-events:none}.hero-inner{position:relative;z-index:1;padding-top:90px}.eyebrow{display:flex;align-items:center;gap:14px;text-transform:uppercase;letter-spacing:.24em;color:var(--gold);font-size:.8rem;font-weight:600}.eyebrow:before{content:"";display:block;width:42px;height:1px;background:var(--gold)}h1,h2{font-family:Georgia,'Times New Roman',serif;font-weight:400;line-height:1.05;letter-spacing:-.035em}h1{font-size:clamp(3.5rem,7vw,7rem);max-width:720px;margin:25px 0 28px}h1 em{font-weight:400;color:#d3dfe7}.hero p{font-size:1.12rem;max-width:450px;color:#d5dde3}.hero-bottom{position:absolute;z-index:1;bottom:42px;width:100%;font-size:.75rem;letter-spacing:.22em;color:#c7d0d8;text-transform:uppercase}
+section{padding:105px 0}.intro{background:#081626}.grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(50px,8vw,140px)}h2{font-size:clamp(2.6rem,4.5vw,4.8rem);margin:16px 0 0}.intro .copy{font-size:1.16rem;color:#c7d0d8;max-width:580px}.rule{height:1px;background:var(--line);margin:32px 0}.fine{font-size:.82rem;color:var(--muted);letter-spacing:.12em;text-transform:uppercase}.process{background:#0d2032;border-top:1px solid #25394c;border-bottom:1px solid #25394c}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:44px;margin-top:57px}.step{border-top:1px solid #627080;padding-top:20px}.num{font-family:Georgia,serif;color:var(--gold);font-size:1.55rem}.step h3{font-family:Georgia,serif;font-size:1.55rem;font-weight:400;margin:24px 0 10px}.step p{color:var(--muted);margin:0;font-size:1rem}.closing{text-align:center;padding:110px 0 125px;background:radial-gradient(circle at 50% 0%,#17354d,#081626 63%)}.closing h2{max-width:800px;margin:18px auto}.closing p{color:var(--muted);max-width:620px;margin:25px auto 0}.button{display:inline-block;margin-top:30px;padding:14px 28px;border:1px solid var(--gold);color:#f8f4e9;text-decoration:none;text-transform:uppercase;letter-spacing:.12em;font-size:.84rem}.button:hover{background:var(--gold);color:var(--navy)}.footer{border-top:1px solid #34475a;padding:32px 0;color:#aab6c1;font-size:.84rem}.footrow{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footrow strong{font-weight:400;letter-spacing:.14em;color:#e7e9e9;text-transform:uppercase}
+@media(max-width:700px){.shell{width:min(100% - 36px,1200px)}.headrow{min-height:72px}.brand{font-size:1.02rem}.brand span{font-size:.48rem}.nav{font-size:.72rem;gap:14px}.hero{min-height:730px;min-height:90svh;background-position:58% center}.hero:after{background:linear-gradient(90deg,rgba(5,16,29,.86) 0%,rgba(5,16,29,.45) 60%,rgba(5,16,29,.2)),linear-gradient(0deg,#081626,transparent 30%)}.hero-inner{padding-top:95px}h1{font-size:clamp(3.2rem,13vw,5rem);max-width:500px}.hero p{font-size:1rem;max-width:300px}.hero-bottom{bottom:28px}.grid,.steps{grid-template-columns:1fr;gap:24px}section{padding:70px 0}.steps{margin-top:40px}.step{padding-top:18px}.closing{padding:80px 0 90px}.footrow{flex-direction:column}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* 2. Logo header + hero (original) */
+:root{--navy:#031724;--gold:#e1ba73}
+.header{background:rgba(3,23,36,.84)}.headrow{min-height:132px}.brand img{display:block;width:120px;height:120px;object-fit:contain}
+.hero{min-height:780px;overflow:hidden}.hero-inner{padding-top:160px}.hero-logo{position:absolute;right:max(3vw,calc((100vw - 1240px)/2));top:180px;width:min(43vw,540px);height:auto;z-index:1;object-fit:contain}.hero h1{max-width:650px;font-size:clamp(3.5rem,6vw,6rem)}.hero p{max-width:440px}.hero:after{background:linear-gradient(0deg,#031724,transparent 35%)}.intro{background:var(--navy)}.closing{background:radial-gradient(circle at 50% 0%,#17354d,#031724 63%)}
+@media(max-width:900px){.hero h1{max-width:52vw;font-size:clamp(3rem,6vw,5rem)}.hero p{max-width:43vw}.hero-logo{right:1vw;width:45vw;top:240px}}
+@media(max-width:700px){.headrow{min-height:106px}.brand img{width:94px;height:94px}.nav{font-size:.875rem;gap:14px;letter-spacing:0}.hero{min-height:960px;align-items:flex-start}.hero-inner{padding-top:148px}.hero h1{max-width:100%;font-size:clamp(3.1rem,11vw,4.6rem)}.hero p{max-width:100%;font-size:1.0625rem}.hero-logo{top:520px;left:50%;right:auto;transform:translateX(-50%);width:min(78vw,350px)}.hero-bottom{font-size:.75rem;letter-spacing:.12em}.hero:after{background:linear-gradient(0deg,#031724,transparent 15%)}.eyebrow{font-size:.875rem;letter-spacing:.14em}}
+
+/* 3. Gallery (original; watermark rules now set per photo in content/gallery.json) */
+.watch-gallery{border-top:1px solid var(--line)}.gallery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:44px}.gallery-grid figure{margin:0;background:#0d2032;border:1px solid #25394c;overflow:hidden}.gallery-grid img{display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:contain}.gallery-grid img.fit-cover{object-fit:cover}.gallery-grid figure:last-child:nth-child(3n + 1){grid-column:2}
+@media(max-width:900px){.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.gallery-grid figure:last-child:nth-child(3n + 1){grid-column:auto}}
+@media(max-width:700px){.nav{gap:10px;font-size:.78rem}}
+@media(max-width:480px){.gallery-grid{grid-template-columns:1fr;gap:20px}}
+.gallery-grid figure{position:relative}
+.gallery-grid figure.wm-dark::after,.gallery-grid figure.wm-light::after{content:"";position:absolute;left:4%;bottom:3%;width:30%;aspect-ratio:12;opacity:.62;background:url("assets/trade-wind-watermark-dark.svg") center/contain no-repeat;pointer-events:none}
+.gallery-grid figure.wm-light::after{background-image:url("assets/trade-wind-watermark-light.svg")}
+.gallery-grid figure.wm-inset::after{left:15%;width:28%}
+.gallery-grid figure.wm-raised::after{bottom:19%}
+
+/* 4. Reviews (original) */
+.reviews{background:#0d2032;border-top:1px solid #25394c;border-bottom:1px solid #25394c}.review-summary{color:var(--muted);margin:26px 0 0}.review-summary strong{color:var(--gold);font-weight:400}.review-summary span{display:block;font-size:.8rem;margin-top:4px}.review-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:start;gap:28px;margin-top:40px}.review-card{margin:0;padding:32px;border:1px solid var(--line);background:var(--navy)}.review-stars{color:var(--gold);font-size:1.25rem;letter-spacing:.14em}.review-card blockquote{margin:22px 0 28px;color:#d5dde3;font-size:1.05rem;line-height:1.7}.review-card blockquote p{margin:0 0 18px}.review-card blockquote p:last-child{margin-bottom:0}.review-card figcaption strong{display:block;font-size:1rem;font-weight:600}.review-card figcaption span{display:block;color:var(--muted);font-size:.85rem;margin-top:5px}
+@media(max-width:1000px){.review-grid{grid-template-columns:1fr;gap:20px}.review-card{padding:24px}}
+
+/* 5. New sections */
+.section-intro{color:var(--muted);max-width:620px;font-size:1.05rem;margin:22px 0 0}
+
+/* Services */
+.services{border-top:1px solid var(--line)}
+.service-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;margin-top:52px}
+.service{border-top:1px solid #627080;padding-top:20px}
+.service h3{font-family:Georgia,serif;font-size:1.45rem;font-weight:400;margin:0 0 12px;color:var(--ink)}
+.service p{color:var(--muted);margin:0;font-size:1rem}
+.values{margin-top:52px;text-align:center;font-family:Georgia,serif;font-style:italic;color:var(--gold);letter-spacing:.08em;font-size:1.15rem}
+.values span{display:block;margin-top:6px;font-size:.9rem;color:var(--muted)}
+@media(max-width:1000px){.service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.service-grid{grid-template-columns:1fr;gap:24px}}
+
+/* Listings */
+.listings{background:var(--navy);border-top:1px solid var(--line)}
+.listing-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin-top:44px}
+.listing{display:flex;flex-direction:column;background:#0d2032;border:1px solid #25394c}
+.listing-photos{position:relative;aspect-ratio:1/1;overflow:hidden;background:#0d2032}
+.listing-photos img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .35s}
+.listing-photos img.active{opacity:1}
+.photo-nav{position:absolute;bottom:12px;left:0;right:0;display:flex;justify-content:center;gap:8px;z-index:1}
+.photo-nav button{width:9px;height:9px;padding:0;border-radius:50%;border:1px solid var(--gold);background:transparent;cursor:pointer}
+.photo-nav button[aria-current="true"]{background:var(--gold)}
+.badge{position:absolute;top:14px;left:14px;z-index:1;padding:5px 10px;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;background:rgba(3,23,36,.88);border:1px solid var(--gold);color:var(--gold)}
+.badge.sold{border-color:#8592a0;color:#c7d0d8}
+.badge.draft{border-color:#d98b6a;color:#f0b49a}
+.listing-body{padding:26px;display:flex;flex-direction:column;flex:1}
+.listing-brand{font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.listing h3{font-family:Georgia,serif;font-weight:400;font-size:1.6rem;margin:8px 0 4px}
+.listing-ref{color:var(--muted);font-size:.9rem;margin:0}
+.listing dl{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;margin:20px 0 0;font-size:.92rem}
+.listing dt{color:var(--muted)}
+.listing dd{margin:0}
+.listing-desc{color:#c7d0d8;font-size:.95rem;margin:18px 0 0}
+.listing-foot{margin-top:auto;padding-top:22px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.price{font-family:Georgia,serif;font-size:1.3rem;color:var(--ink)}
+.price.inquire{font-size:1rem;color:var(--muted);font-style:italic}
+.listing .button{margin-top:0;padding:10px 18px;font-size:.76rem}
+.listing.is-sold{opacity:.72}
+@media(max-width:1000px){.listing-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.listing-grid{grid-template-columns:1fr}}
+
+/* Instagram */
+.instagram{background:#0d2032;border-top:1px solid #25394c}
+.reel-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:28px;margin-top:44px}
+.reel{width:min(100%,400px)}
+.reel .instagram-media{min-width:0!important;width:100%!important;margin:0!important;border-radius:0!important}
+.reel-fallback{display:block;padding:28px;border:1px solid var(--line);text-align:center;text-decoration:none;color:var(--gold);letter-spacing:.12em;text-transform:uppercase;font-size:.84rem}
+.ig-follow{text-align:center;margin-top:34px}
+
+/* Phone hero: the original layout let the globe logo sit on top of the
+   intro text. Stack it underneath instead. */
+@media(max-width:700px){
+  .hero{flex-direction:column;align-items:stretch;justify-content:flex-start;min-height:0;padding-bottom:110px}
+  .hero-inner{order:1;padding-top:150px}
+  .hero-logo{order:2;position:relative;top:auto;left:auto;right:auto;transform:none;margin:28px auto 0;width:min(72vw,320px)}
+}
+
+/* Nav wraps cleanly on small screens with the extra links */
+@media(max-width:700px){.nav{flex-wrap:wrap;justify-content:flex-end;row-gap:6px}}

@@ -1,0 +1,187 @@
+# Pages CMS configuration — https://pagescms.org
+# Sign in at app.pagescms.org with GitHub, open this repository, and these
+# editors appear. Every save is a commit; Cloudflare Pages rebuilds the site
+# automatically about a minute later.
+
+media:
+  input: public/assets/uploads
+  output: /assets/uploads
+  extensions: [jpg, jpeg, png, webp, gif]
+
+content:
+  - name: listings
+    label: Watches for sale
+    type: file
+    path: content/listings.json
+    format: json
+    fields:
+      - { name: eyebrow, label: Small heading, type: string }
+      - { name: heading, label: Heading, type: string }
+      - { name: intro, label: Intro text, type: text }
+      - name: watches
+        label: Watches
+        type: object
+        list: true
+        fields:
+          - { name: brand, label: Brand, type: string, required: true }
+          - { name: model, label: Model, type: string, required: true }
+          - { name: reference, label: Reference number, type: string }
+          - { name: year, label: Year, type: string }
+          - { name: condition, label: Condition, type: string }
+          - { name: box_papers, label: Box & papers, type: string }
+          - { name: price, label: "Price (leave blank to show 'Inquire for price')", type: string }
+          - name: status
+            label: Status
+            type: select
+            options:
+              values: [available, on-hold, sold, draft, hidden]
+          - { name: description, label: Description, type: text }
+          - { name: photos, label: Photos (first one is the cover), type: image, list: true }
+
+  - name: gallery
+    label: Photo gallery
+    type: file
+    path: content/gallery.json
+    format: json
+    fields:
+      - { name: eyebrow, label: Small heading, type: string }
+      - { name: heading, label: Heading, type: string }
+      - name: images
+        label: Photos
+        type: object
+        list: true
+        fields:
+          - { name: image, label: Photo, type: image, required: true }
+          - { name: alt, label: "Description (for search engines and screen readers)", type: string }
+          - name: fit
+            label: Framing
+            type: select
+            options:
+              values: [contain, cover]
+          - name: watermark
+            label: Watermark
+            type: select
+            options:
+              values: [dark, light, none]
+          - name: watermark_position
+            label: Watermark position
+            type: select
+            options:
+              values: [standard, inset, raised]
+
+  - name: instagram
+    label: Instagram reels
+    type: file
+    path: content/instagram.json
+    format: json
+    fields:
+      - { name: eyebrow, label: Small heading, type: string }
+      - { name: heading, label: Heading, type: string }
+      - { name: profile_url, label: Instagram profile link, type: string }
+      - { name: handle, label: Handle, type: string }
+      - name: reels
+        label: Reels to show (paste the reel's link)
+        type: object
+        list: true
+        fields:
+          - { name: url, label: Reel link, type: string }
+
+  - name: reviews
+    label: Google reviews
+    type: file
+    path: content/reviews.json
+    format: json
+    fields:
+      - { name: eyebrow, label: Small heading, type: string }
+      - { name: heading, label: Heading, type: string }
+      - { name: rating, label: Overall rating, type: string }
+      - { name: count, label: Number of reviews, type: number }
+      - { name: as_of, label: As of (date), type: string }
+      - name: reviews
+        label: Reviews
+        type: object
+        list: true
+        fields:
+          - { name: name, label: Reviewer, type: string }
+          - { name: stars, label: Stars, type: number }
+          - { name: text, label: "Review text (blank line = new paragraph)", type: text }
+
+  - name: site
+    label: Page text & contact details
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: business
+        label: Contact details
+        type: object
+        fields:
+          - { name: name, label: Business name, type: string }
+          - { name: location, label: Location, type: string }
+          - { name: phone, label: "Phone for tap-to-call (e.g. +17023501679)", type: string }
+          - { name: phone_display, label: Phone as shown, type: string }
+          - { name: email, label: Email, type: string }
+          - { name: email_subject, label: Default email subject, type: string }
+      - name: hero
+        label: Top of page
+        type: object
+        fields:
+          - { name: eyebrow, label: Small heading, type: string }
+          - { name: headline, label: Headline, type: string }
+          - { name: headline_italic, label: Headline (italic second line), type: string }
+          - { name: intro, label: Intro, type: text }
+      - name: about
+        label: About
+        type: object
+        fields:
+          - { name: eyebrow, label: Small heading, type: string }
+          - { name: heading, label: Heading, type: string }
+          - { name: body, label: Text, type: text }
+          - { name: brands, label: Brands line, type: text }
+      - name: services
+        label: Services
+        type: object
+        fields:
+          - { name: eyebrow, label: Small heading, type: string }
+          - { name: heading, label: Heading, type: string }
+          - name: items
+            label: Services
+            type: object
+            list: true
+            fields:
+              - { name: title, label: Title, type: string }
+              - { name: text, label: Text, type: text }
+          - { name: values, label: Values line, type: string }
+          - { name: values_note, label: Values note, type: string }
+      - name: approach
+        label: Approach
+        type: object
+        fields:
+          - { name: eyebrow, label: Small heading, type: string }
+          - { name: heading, label: Heading, type: string }
+          - name: steps
+            label: Steps
+            type: object
+            list: true
+            fields:
+              - { name: title, label: Title, type: string }
+              - { name: text, label: Text, type: text }
+      - name: contact
+        label: Contact section
+        type: object
+        fields:
+          - { name: eyebrow, label: Small heading, type: string }
+          - { name: heading, label: Heading, type: string }
+          - { name: text, label: Text, type: text }
+          - { name: button, label: Button label, type: string }
+      - name: footer
+        label: Footer
+        type: object
+        fields:
+          - { name: disclaimer, label: Disclaimer, type: string }
+      - name: seo
+        label: Search engine title & description
+        type: object
+        fields:
+          - { name: title, label: Page title, type: string }
+          - { name: description, label: Description, type: text }

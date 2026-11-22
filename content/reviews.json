@@ -1,0 +1,24 @@
+{
+  "eyebrow": "Google reviews",
+  "heading": "In our clients’ words.",
+  "rating": "5.0",
+  "count": 3,
+  "as_of": "October 24, 2026",
+  "reviews": [
+    {
+      "name": "Brian G",
+      "stars": 5,
+      "text": "Very professional, answered all my questions and my watch was just as described. It exceeded my expectations. I will continue to use Trade Wind Timepieces in the future, and can recommend them without hesitation."
+    },
+    {
+      "name": "Kenneth Linsley",
+      "stars": 5,
+      "text": "I have done two transactions with Trade Winds so far and I’m confident I will be doing more in the future. The owner Bill is very knowledgeable, easy to talk to and promptly returned all communication.\n\nBill made everything about the watch buying process so easy and comfortable and even saved me money with his thoughtful recommendations.\n\nI highly recommend Trade Winds. I’m willing to answer any questions you may have about my experience with this very well run business.."
+    },
+    {
+      "name": "Nate’s Timepieces, LLC",
+      "stars": 5,
+      "text": "Bill is awesome to work with, have done multiple deals with him"
+    }
+  ]
+}

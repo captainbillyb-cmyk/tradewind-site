@@ -1,0 +1,19 @@
+{
+  "eyebrow": "Available now",
+  "heading": "Current watches.",
+  "intro": "A selection of pieces currently available. Ask about anything not listed — much of what we handle is sourced to order.",
+  "watches": [
+    {
+      "brand": "Rolex",
+      "model": "GMT-Master II",
+      "reference": "",
+      "year": "",
+      "condition": "",
+      "box_papers": "",
+      "price": "",
+      "status": "draft",
+      "description": "SAMPLE LISTING for preview only — draft listings never appear on the live site. Replace or delete this entry.",
+      "photos": ["/assets/gallery-01.webp", "/assets/gallery-03.webp"]
+    }
+  ]
+}
